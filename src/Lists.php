@@ -15,6 +15,7 @@ class Lists extends KlaviyoAPI
     const ENDPOINT_GROUP = 'group';
     const ENDPOINT_LIST = 'list';
     const ENDPOINT_LISTS = 'lists';
+    const ENDPOINT_CAMPAIGNS = 'campaigns';
     const ENDPOINT_MEMBERS = 'members';
     const ENDPOINT_SEGMENT = 'segment';
     const ENDPOINT_SUBSCRIBE = 'subscribe';
@@ -54,6 +55,17 @@ class Lists extends KlaviyoAPI
 
         return $this->v2Request( self::ENDPOINT_LISTS );
     }
+
+	/**
+	 * Get all campaigns
+	 * @link https://www.klaviyo.com/docs/api/campaigns#campaigns
+	 *
+	 * @return bool/mixed
+	 */
+	public function getCampaigns() {
+
+		return $this->v1Request( self::ENDPOINT_CAMPAIGNS );
+	}
 
     /**
      * Get information about a list
