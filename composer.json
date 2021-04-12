@@ -1,5 +1,5 @@
 {
-    "name": "klaviyo/php-sdk",
+    "name": "medutis/klaviyo-php-sdk",
     "description": "Klaviyo PHP SDK",
     "keywords": ["klaviyo", "sdk"],
     "type": "library",
